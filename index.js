@@ -110,15 +110,4 @@ app.get('/checkout', async (req, res)=>{
             '<input type="hidden" id="gateway" name="gateway" value="MercadoPago">'+
             '<button type="submit">Enviar</button>'+
         '</form>');
-    // await apiCheckout.post('/',{
-    //     servidor: 'TrowCraft',
-    //     id: 116,
-    //     qnt: 1,
-    //     player: 'Trow_Games',
-    //     gateway: 'MercadoPago'
-    // }).then(resp => {
-    //     res.send(resp.data);
-    // }).catch(err => {
-    //     res.send(err);
-    // });
 });
