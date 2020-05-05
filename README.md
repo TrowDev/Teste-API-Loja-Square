@@ -70,7 +70,7 @@ https://api.lojasquare.com.br//v1/queue/*
 <hr>
 
 **POST - Checkout de Carrinho - DIFERENCIADO, USAR EM FORMULÁRIO**
-- URI: **https://www.lojasquare.com.br/gateways/checkout.php**
+- URI: **https://www.lojasquare.com.br/gateways/checkout2.php**
 - Formato JSON dos produtos no carrinho: <br>
 { <br>
     "**ID_PRODUTO**": { <br>
