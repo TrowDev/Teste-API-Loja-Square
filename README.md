@@ -69,13 +69,20 @@ https://api.lojasquare.com.br//v1/queue/*
 - URI: **https://api.lojasquare.com.br//v1/cupom/(CUPOM)/(GRUPO-DO-PRODUTO)**
 <hr>
 
-**POST - Checkout de compra - DIFERENCIADO, USAR EM FORMULÁRIO**
+**POST - Checkout de Carrinho - DIFERENCIADO, USAR EM FORMULÁRIO**
 - URI: **https://www.lojasquare.com.br/gateways/checkout.php**
+- Formato JSON dos produtos no carrinho: <br>
+{ <br>
+    "**ID_PRODUTO**": { <br>
+        "id_produto": "**ID_PRODUTO**", <br>
+        "qnt": **QUANTIDADE_DO_PRODUTO_NO_CARRINHO**, <br>
+        "prod_info": **RETORNO DE: https://api.lojasquare.com.br//v1/produto/(ID_PRODUTO)** <br>
+    } <br>
+} <br>
 - Parâmetros necessários:
 ° Inputs do tipo "hidden":
   - name="servidor"               | value: "Nome do Servidor"
-  - name="id"                     | value: "ID do produto"
-  - name="qnt"                    | value: "Quantidade adquirida"
+  - name="carrinho"                     | value: "JSON dos produtos no carrinho"
   - name="player"                 | value: "Nick do player"
   - name="gateway"                | value: "Gateway escolhido"
     **OBS: Gateways válidos: "MercadoPago", "PayPal", "PagSeguro"**
