@@ -75,8 +75,8 @@ https://api.lojasquare.com.br//v1/queue/*
 { <br>
     "**ID_PRODUTO**": { <br>
         "id_produto": "**ID_PRODUTO**", <br>
-        "qnt": **QUANTIDADE_DO_PRODUTO_NO_CARRINHO**, <br>
-        "prod_info": **RETORNO DE: https://api.lojasquare.com.br//v1/produto/(ID_PRODUTO)** <br>
+        "quantidade": **QUANTIDADE_DO_PRODUTO_NO_CARRINHO**, <br>
+        "grupo": **GRUPO DO PRODUTO** <br>
     } <br>
 } <br>
 - Parâmetros necessários:
