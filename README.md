@@ -62,21 +62,37 @@ https://api.lojasquare.com.br//v1/queue/*
 <hr>
 
 **PUT - Validar Cupom X**
-- Endpoint: **cupom/(CUPOM)/(GRUPO-DO-PRODUTO)**
-- CUPOM = Cupom a ser validado.
-- GRUPO-DO-PRODUTO = Grupo identificador do produto (informado ao criar o produto).
-- Obtem as informações do cupom se o cupom for validado.
-- URI: **https://api.lojasquare.com.br//v1/cupom/(CUPOM)/(GRUPO-DO-PRODUTO)**
+- Endpoint: **cupom/(CUPOM)**
+- CUPOM = Cupom a ser validado.<br>
+- Body: Lista de itens do carrinho, com os seguintes parâmetros:<br>
+[<br>
+		{
+			"id_produto": 1111,
+			"quantidade": 5
+		},<br>
+		{
+			"id_produto": 2222,
+			"quantidade": 2
+		}<br>
+]<br>
+Exemplo de teste da API:<br>
+![image](https://user-images.githubusercontent.com/56046755/83031275-bd0bb680-a00a-11ea-9f53-1554f495101d.png)<br>
+
+Exemplo no código:<br>
+![image](https://user-images.githubusercontent.com/56046755/83031451-f2b09f80-a00a-11ea-8062-7f60a6eebeee.png)<br>
+
+- Obtem carrinho atualizado com os valores após aplicação do cupom.<br>
+- URI: **https://api.lojasquare.com.br//v1/cupom/(CUPOM)**
 <hr>
 
 **POST - Checkout de Carrinho - DIFERENCIADO, USAR EM FORMULÁRIO**
 - URI: **https://www.lojasquare.com.br/gateways/checkout2.php**
 - Formato JSON dos produtos no carrinho: <br>
 { <br>
-    "**ID_PRODUTO**": { <br>
-        "id_produto": "**ID_PRODUTO**", <br>
-        "quantidade": **QUANTIDADE_DO_PRODUTO_NO_CARRINHO**, <br>
-        "grupo": **GRUPO DO PRODUTO** <br>
+    "**ID_PRODUTO**": {
+        "id_produto": "**ID_PRODUTO**",
+        "quantidade": **QUANTIDADE_DO_PRODUTO_NO_CARRINHO**,
+        "grupo": **GRUPO DO PRODUTO**
     } <br>
 } <br>
 - Parâmetros necessários:
