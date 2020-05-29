@@ -102,6 +102,11 @@ Exemplo no código:<br>
   - name="player"                 | value: "Nick do player"
   - name="gateway"                | value: "Gateway escolhido"
     **OBS: Gateways válidos: "MercadoPago", "PayPal", "PagSeguro"**
-  - name="cupomON"                | value: "Cupom utilizado"
+  - name="cupomON"                | value: "Cupom utilizado".
     **OBS: Se o player não usar nenhum cupom, não precisa criar o input "cupomON".**
+    
+° Inputs do tipo "hidden" OPCIONAIS:
+  - name="returnURL" 		  | value: "URL de Retorno ao finalizar uma compra com sucesso"
+  - name="cancelURL"		  | value: "URL de Retorno ao obter um erro na compra"
+  OBS: returnURL e cancelURL só serão passados se o gateway aceitar este tipo de parâmetro
 <hr>
