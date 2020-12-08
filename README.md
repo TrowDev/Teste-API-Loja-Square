@@ -86,9 +86,10 @@ Exemplo no código:<br>
 <hr>
 
 **GET - Transações**
-- Endpoint: **transacoes**
+- Endpoint: **transacoes/(timestamp_filtro)**
 - Obtem a lista de transações do servidor.
-- URI: **https://api.lojasquare.com.br//v1/transacoes**
+- URI: **https://api.lojasquare.com.br//v1/transacoes/(timestamp_filtro)**
+- **timestamp_filtro** = Indica o tempo em UNIX timestamp para o filtro de transações (a partir de que momento).
 - Endpoint: **transacoes/topCompradores**
 - Obtem a lista de top compradores do servidor.
 - URI: **https://api.lojasquare.com.br//v1/transacoes/topCompradores**
