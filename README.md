@@ -85,6 +85,15 @@ Exemplo no código:<br>
 - URI: **https://api.lojasquare.com.br//v1/cupom/(CUPOM)**
 <hr>
 
+**GET - Transações**
+- Endpoint: **transacoes**
+- Obtem a lista de transações do servidor.
+- URI: **https://api.lojasquare.com.br//v1/transacoes**
+- Endpoint: **transacoes/topCompradores**
+- Obtem a lista de top compradores do servidor.
+- URI: **https://api.lojasquare.com.br//v1/transacoes/topCompradores**
+<hr>
+
 **POST - Checkout de Carrinho - DIFERENCIADO, USAR EM FORMULÁRIO**
 - URI: **https://www.lojasquare.com.br/gateways/checkout2.php**
 - Formato JSON dos produtos no carrinho: <br>
