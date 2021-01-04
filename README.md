@@ -86,6 +86,7 @@ Exemplo no código:<br>
 <hr>
 
 **GET - Transações**
+- Header: **Authorization -> SECRET API**
 - Endpoint: **transacoes/(timestamp_filtro)**
 - Obtem a lista de transações do servidor.
 - URI: **https://api.lojasquare.com.br//v1/transacoes/(timestamp_filtro)**
@@ -93,6 +94,9 @@ Exemplo no código:<br>
 - Endpoint: **transacoes/topCompradores**
 - Obtem a lista de top compradores do servidor.
 - URI: **https://api.lojasquare.com.br//v1/transacoes/topCompradores**
+- Query Params: 
+	**?dataInicio**=DD/MM/YYYY 
+	**&dataFim**=DD/MM/YYYY
 <hr>
 
 **POST - Checkout de Carrinho - DIFERENCIADO, USAR EM FORMULÁRIO**
